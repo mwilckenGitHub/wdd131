@@ -19,12 +19,33 @@
 }
 
 header {
+    display: flex;
+    flex-direction: column;
     text-align: left;
     color: var(--colors-header-and-footer-text);
     background-color: var(--colors-header-and-footer-banners);
-    min-height: 20vh;
-    height: auto;
 }
+
+/*Get the hyperlink tags to match the following output: @see https: //byui-cse.github.io/wdd131-ww-course/week01/prepare-layout-review.html*/
+.navigation {
+    margin-top: 5em;
+    padding: 1em;
+    position: relative;
+    list-style: none;
+    /*Removes the bullets on the list items...*/
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: var(--colors-navigation-bar-background);
+}
+
+.navigation a {
+    color: var(--colors-navigation-bar-foreground);
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
 
 header h1,
 main h1,
@@ -60,30 +81,4 @@ footer {
     text-align: center;
 
     bottom: 0;
-}
-
-
-/*Get the hyperlink tags to match the following output: @see https: //byui-cse.github.io/wdd131-ww-course/week01/prepare-layout-review.html*/
-.navigation {
-
-    list-style: none;
-    /*Removes the bullets on the list items...*/
-    display: flex;
-    flex-wrap: wrap;
-    background-color: var(--colors-navigation-bar-background);
-    padding: 1em;
-}
-
-/*Example used from https://codepen.io/BYU-Idaho/pen/YzmMwWz*/
-.navigation li {
-    flex: 1 1 auto;
-}
-
-.navigation a {
-    display: block;
-    color: var(--colors-navigation-bar-foreground);
-    text-decoration: none;
-    text-align: center;
-    justify-content: space-between;
-    font-family: Arial, Helvetica, sans-serif;
 }
