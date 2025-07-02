@@ -1,0 +1,89 @@
+/*Get vars*/
+:root {
+    --colors-header-and-footer-banners: rgb(61, 61, 61);
+    --colors-navigation-bar-background: black;
+    --colors-navigation-bar-foreground: white;
+    --colors-body-right-sidebar: white;
+    --colors-body-left-sidebar: lightgray;
+    --colors-header-and-footer-text: white;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: serif;
+    /*Use any serifed font for the main body*/
+    font-size: 12pt;
+}
+
+header {
+    text-align: left;
+    color: var(--colors-header-and-footer-text);
+    background-color: var(--colors-header-and-footer-banners);
+    min-height: 20vh;
+    height: auto;
+}
+
+header h1,
+main h1,
+main aside,
+footer h1 {
+    font-weight: lighter;
+    padding: 1em;
+}
+
+.main-content-grid {
+    display: grid;
+    grid-template: 3fr 1fr;
+    min-height: 50vh;
+}
+
+#left-sidebar {
+    background: var(--colors-body-left-sidebar);
+    grid-column: 1 / 3;
+}
+
+#right-sidebar {
+    background: var(--colors-body-right-sidebar);
+    grid-column: 3 / 4;
+}
+
+footer {
+    padding: 1em;
+    margin-top: auto;
+    color: var(--colors-header-and-footer-text);
+    background: var(--colors-header-and-footer-banners);
+    min-height: 20vh;
+    height: auto;
+    text-align: center;
+
+    bottom: 0;
+}
+
+
+/*Get the hyperlink tags to match the following output: @see https: //byui-cse.github.io/wdd131-ww-course/week01/prepare-layout-review.html*/
+.navigation {
+
+    list-style: none;
+    /*Removes the bullets on the list items...*/
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--colors-navigation-bar-background);
+    padding: 1em;
+}
+
+/*Example used from https://codepen.io/BYU-Idaho/pen/YzmMwWz*/
+.navigation li {
+    flex: 1 1 auto;
+}
+
+.navigation a {
+    display: block;
+    color: var(--colors-navigation-bar-foreground);
+    text-decoration: none;
+    text-align: center;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+}
