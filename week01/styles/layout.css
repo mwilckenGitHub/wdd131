@@ -57,7 +57,7 @@ footer h1 {
 
 .sidebar-grid {
     display: grid;
-    grid-template: 3fr 1fr;
+    grid-template: auto auto auto auto;
     min-height: 50vh;
 }
 
