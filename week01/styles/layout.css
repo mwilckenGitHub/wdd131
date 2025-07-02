@@ -55,7 +55,7 @@ footer h1 {
     padding: 1em;
 }
 
-.main-content-grid {
+.sidebar-grid {
     display: grid;
     grid-template: 3fr 1fr;
     min-height: 50vh;
