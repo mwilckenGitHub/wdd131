@@ -57,7 +57,8 @@ footer h1 {
 
 .sidebar-grid {
     display: grid;
-    grid-template-columns: 66% 33%; /*Get a nice, even span*/
+    grid-template-columns: 66% 33%;
+    /*Get a nice, even span*/
     min-height: 50vh;
 }
 
