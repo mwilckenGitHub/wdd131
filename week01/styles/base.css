@@ -22,6 +22,8 @@
     font-family: "Fjalla One", sans-serif;
     font-weight: 400;
     font-style: normal;/**/
+
+    box-sizing: border-box;
 }
 
 body {
@@ -51,3 +53,113 @@ header span {
     justify-content: space-evenly;
 
 }
+
+/*Main*/
+
+/*Sections*/
+.flex-info{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+}
+
+/*cards general*/
+.card {
+    width: auto;
+    border-style: solid;
+    border-radius: 1em;
+    border-color: var(--colors-backgrounds-banners);
+    border-width: 1pt;
+}
+
+.card div h1 {
+    position: relative;
+    top: 0px;
+    text-align: center;
+    background-color: var(--colors-backgrounds-banners);
+    color: aliceblue;
+}
+.card img {
+    max-height: min-content;
+}
+
+
+.overview{
+    display: flex;
+    flex-direction: row;
+}
+.overview img{
+    
+}
+
+.introduction {
+    display: flex;
+    flex-direction: column;
+}
+.introduction img {
+    
+}
+.introduction h3{
+    text-align: center;
+}
+
+
+.placeofbirth{
+    display: flex;
+    flex-direction: row-reverse;
+}
+/*
+.left-card-upper {
+    display: flex;
+    flex-direction: row;
+
+}
+.left-card-upper img {
+    max-height:min-content;
+    margin-left: 1em;
+}
+
+.left-card-lower {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.left-card-lower-flex-row-reversed
+{
+    display: flex;
+    flex-direction: row-reverse;
+
+}
+
+.left-card-lower img {
+    max-height: min-content;
+
+    margin-left: 1em;
+    opacity: 0.5;
+}
+
+.left-card-lower p {
+    width: auto;
+}
+
+.left-card-lower h3 {
+
+    text-align: center;
+    border: 1px solid black;
+}
+/**/
+/*
+.right-card {
+    margin-left: 0.25em; 
+    width: 25%;
+    margin-right: 1em; 
+}
+
+
+.left-card-upper,
+.left-card-lower,
+.right-card {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}/**/
