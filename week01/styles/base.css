@@ -30,6 +30,12 @@ body {
 
 }
 
+header {
+    background-color: var(--colors-backgrounds-banners);
+    margin-top: 0px;
+
+}
+
 /*Header*/
 header span {
     display: block;
